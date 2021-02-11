@@ -14,19 +14,12 @@ html{
     scrollbar-width: none;
 }
 }
-/* @media(max-width:600px)
-{
-    p, span, a, li, header
-    {
-        font-size:14px;
-    }
-} */
 header
 {
     padding:12px;
     background:#6b6b69;
     width:100%;
-    font-family:'Segoe UI','open sans',sans-serif;
+    font-family:'Segoe UI',sans-serif;
     color:white;
 }
 header h1
@@ -81,6 +74,9 @@ header address p a
     header address p a{
         color:black;
     }
+    .download-btn{
+        display:none;
+    }
 }
 header .address1 address p span
 {
@@ -99,11 +95,11 @@ header .address1 address p
     margin-left:35px;
     margin-right:35px;
     font-size:20px;
-    font-family:'Segoe UI','open sans',sans-serif;
+    font-family:'Segoe UI',sans-serif;
 }
 .caption span
 {
-    font-size:23px
+    font-size:25px
 }
 hr
 {
@@ -118,7 +114,7 @@ hr
     margin-right:35px;
     font-style:normal;
     font-size:18px;
-    font-family:'Segoe UI','open sans',sans-serif;
+    font-family:'Segoe UI',sans-serif;
     text-align:justify;
     text-justify: inter-word;
 }
@@ -130,7 +126,7 @@ hr
 }
 .edu
 {
-    font-family:'Segoe UI','open sans',sans-serif;
+    font-family:'Segoe UI',sans-serif;
     margin-left:35px;
     margin-right:35px;
     text-align:center;
@@ -144,7 +140,7 @@ hr
 .edu table
 {
     border-collapse: collapse;
-    font-family:16px 'Segoe UI'; 
+    font-family:'Segoe UI'; 
     width: 99%;
 }
 .edu th
@@ -161,21 +157,18 @@ hr
 }
 .extra, .tech, .course, .interest, .strength, .hobby
 {
-    font-family:'Segoe UI','open sans',sans-serif;
+    font-family:'Segoe UI',sans-serif;
     margin-left:35px;
     margin-right:35px;
     font-size:18px;
 }
-.course ul li span
-{
-    font-weight:600;
-}
 .project
 {
-    font-family:'Segoe UI','open sans',sans-serif;
+    font-family:'Segoe UI',sans-serif;
     margin-left:45px;
     margin-right:35px;
     font-size:18px;
+    text-align: justify;
 }
 .project p
 {
@@ -187,5 +180,25 @@ hr
 }
 .project a:hover
 {
-    color:violet;
+    color:red;
+}
+.project a:visited{
+    color:rgb(138, 46, 138);
+}
+.download-btn{
+    text-align: center;
+    margin-bottom: 12px;
+}
+.download-btn button{
+    background-color:steelblue;
+    color:white;
+    font-size:16px;
+    padding:10px;
+    border:none;
+    outline:none;
+}
+.download-btn button:hover{
+    background-color:white;
+    color:steelblue;
+    border:1px solid steelblue;
 }
