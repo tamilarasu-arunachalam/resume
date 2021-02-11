@@ -14,13 +14,13 @@ html{
     scrollbar-width: none;
 }
 }
-@media(max-width:600px)
+/* @media(max-width:600px)
 {
     p, span, a, li, header
     {
         font-size:14px;
     }
-}
+} */
 header
 {
     padding:12px;
@@ -119,6 +119,8 @@ hr
     font-style:normal;
     font-size:18px;
     font-family:'Segoe UI','open sans',sans-serif;
+    text-align:justify;
+    text-justify: inter-word;
 }
 .obj p
 {
