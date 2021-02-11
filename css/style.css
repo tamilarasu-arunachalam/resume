@@ -3,6 +3,17 @@ body
     margin:0;
     padding:0;
 }
+/* hide scroll bars in chrome */
+::-webkit-scrollbar{
+    width: 0 !important;
+    display:none;
+  }
+/* hide scroll bars in firefox */
+@-moz-document url-prefix() {
+html{
+    scrollbar-width: none;
+}
+}
 @media(max-width:600px)
 {
     p, span, a, li, header
@@ -123,57 +134,10 @@ hr
     text-align:center;
     font-size:18px;
 }
-@media only screen and (max-width: 600px)  
-{
-    .obj p
-    {
-        font-size:15px;
-        margin:0;
+@media only screen and (max-width: 600px){
+    .edu{
+        overflow-x: auto;
     }
-    table, thead, tbody, th, td, tr 
-    { 
-        display: block; 
-        font: normal 12px 'Segoe UI';
-        width:100%;
-    }
-    thead tr 
-    { 
-        position: absolute;
-        top: -9999px;
-        left: -9999px;
-        border:1px solid black;       
-    }
-    tr
-    { 
-        border: 6px solid snow; 
-    }
-    td 
-    {     
-        border: 1px solid black; 
-        position: relative; 
-        font-size:13px;
-    }
-    td:nth-child(1), td:nth-child(2), td:nth-child(3), td:nth-child(4), td:nth-child(5)
-    {
-        text-align:right;
-    }
-    td:before 
-    { 
-        position: absolute;
-        top: 3px;
-        left: 6px;
-        width:40%; 
-        padding-right: 25px; 
-        white-space: nowrap;
-        font-weight: bold;
-        font-size:13px;
-        color:blue;
-    }
-    td:nth-of-type(1):before { content: "Qualification"; }
-    td:nth-of-type(2):before { content: "Institution"; }
-    td:nth-of-type(3):before { content: "Board / University"; }
-    td:nth-of-type(4):before { content: "Year of Passing"; }
-    td:nth-of-type(5):before { content: "Percentage %"; }
 }
 .edu table
 {
